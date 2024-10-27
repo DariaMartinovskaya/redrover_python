@@ -21,6 +21,6 @@ def create_new_test_case():
     return response
 
 response = create_new_test_case()
-print(response.status_code)
-print()
+pprint(response.status_code)
+pprint()
 pprint(response.json())
