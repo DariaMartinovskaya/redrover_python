@@ -8,6 +8,7 @@
 5. Сравнение велосипедов и селенидов: <https://www.youtube.com/watch?v=yv0Qpkdh-pc>
 6. Как написать свой селенид: <https://www.youtube.com/watch?v=DPV__58mcoM>
 
+<!-- pip install selene==2.0.0rc9 -->
 
 **Позже будет дополнено**
 
