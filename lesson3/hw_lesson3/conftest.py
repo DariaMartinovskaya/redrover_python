@@ -3,7 +3,7 @@ import pytest
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
 
 @pytest.fixture
 def driver():
@@ -23,3 +23,8 @@ def driver():
     # driver.maximize_window()
     yield driver
     driver.quit()
+
+@pytest.fixture
+def wait(driver):
+    wait = WebDriverWait(driver, timeout=10)
+    return wait
