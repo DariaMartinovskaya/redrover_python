@@ -32,12 +32,6 @@ def test_ui(driver):
     delete_button = ("xpath", "/html/body/div[2]/div/div/div/button")
     WebDriverWait(driver, 10).until(EC.element_to_be_clickable(delete_button)).click()
 
-def test_authorization(driver):
-    driver.get("https://the-internet.herokuapp.com/basic_auth")
-
-    username_field = ("xpath", "")
-
-    visible__sign_in_pop_up = wait.until(EC.element_to_be_clicable(("xpath", "#startTest")))
 
 
 
